@@ -7,8 +7,7 @@
 
 ## Get started
 
-`cd functions`
-`npm install`
+`cd functions && npm install`
 
 ## Run project
 
