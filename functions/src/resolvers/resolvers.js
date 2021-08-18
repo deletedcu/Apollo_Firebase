@@ -9,6 +9,21 @@ const resolvers = {
           .then((snap) => snap.val())
           .then((val) => Object.keys(val).map((key) => val[key])),
   },
+  Mutation: {
+    addCountry: (_, {input: country}) => {
+      return new Promise((resolve, reject) => {
+        const newCountryRef = admin.database().ref("countries").push();
+        newCountryRef.set(country, (err) => {
+          if (err) {
+            console.log(err);
+            reject(err);
+          } else {
+            resolve(country);
+          }
+        });
+      });
+    },
+  },
 };
 
 module.exports = resolvers;

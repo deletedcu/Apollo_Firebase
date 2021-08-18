@@ -2,13 +2,25 @@ const {gql} = require("apollo-server-express");
 
 const typeDefs = gql`
   type Country {
-    Country: String,
-    Year: String,
-    Area: Int,
-    Population: Int
+    country: String,
+    year: String,
+    area: Int,
+    population: Int
   }
+
+  input CountryInput {
+    country: String!,
+    year: String!,
+    area: Int!,
+    population: Int!
+  }
+
   type Query {
     countries: [Country],
+  }
+
+  type Mutation {
+    addCountry(input: CountryInput!): Country
   }
 `;
 
