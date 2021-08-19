@@ -5,7 +5,7 @@ const admin = require("firebase-admin");
 // 2. Click Generate New Private Key, then confirm by clicking Generate Key.
 // 3. Store the JSON file in the `functions/resources/` directory
 
-const serviceAccount = require(".././resources/ghost-writer-alpha-firebase-adminsdk-3d6h7-6d2d454f86.json");
+const serviceAccount = require(".././resources/firebase-adminsdk.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
