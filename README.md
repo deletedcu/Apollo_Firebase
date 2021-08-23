@@ -1,6 +1,11 @@
 # Apollo  Server Express with Firebase Realtime Database
 
 [Demo video link](https://drive.google.com/file/d/1wdWrEIah5NAJyq-ARtRcWqrwLCPABPVa/view?usp=sharing)
+
+<p align="center">
+  <img src="Apollo Firebase recording.gif"/>
+</p>
+
 1. Server: Apollo Express Server
 2. Database: Google Firebase Realtime Database
 3. Language: JavaScript
